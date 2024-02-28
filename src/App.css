@@ -1,38 +1,106 @@
-.App {
+/* app.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+form, .event, .reservation-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+form:hover, .event:hover, .reservation-form:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="number"],
+select,
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+.event {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.event h3 {
+  margin-top: 0;
+  color: #2196F3;
+}
+
+.reservation-form {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.homepage {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container {
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.login-container h2 {
+  color: #2196F3;
+}
+
+.reservation-form h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="number"],
+  select,
+  button {
+    width: auto;
+    margin-top: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Add some padding inside the window */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
   }
 }
