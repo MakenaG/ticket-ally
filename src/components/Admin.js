@@ -190,7 +190,7 @@ function Admin() {
           });
       } else {
         // Add the event to the mock API
-        fetch(" ", {
+        fetch("https://run.mocky.io/v3/f604746d-b06e-4c4e-89df-462a8828957d", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

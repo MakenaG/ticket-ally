@@ -20,7 +20,7 @@ function Navbar() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          Ticket Booking System
+        Ticket-Ally
         </Typography>
         <Button component={Link} to="/" className={classes.button}>
           Home
