@@ -7,20 +7,24 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     flexGrow: 1,
     cursor: "pointer",
+    color: "#FFF", // White color
   },
   button: {
-    color: "white",
+    color: "#FFF", // White color
     margin: theme.spacing(1),
+    "&:hover": {
+      backgroundColor: "rgba(255, 255, 255, 0.1)", // Light gray on hover
+    },
   },
 }));
 
 function Navbar() {
   const classes = useStyles();
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ backgroundColor: "#000" }}> {/* Black background */}
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-        Ticket-Ally
+          Ticket-Ally
         </Typography>
         <Button component={Link} to="/" className={classes.button}>
           Home
