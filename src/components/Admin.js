@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "2rem",
     fontWeight: "bold",
-    color: theme.palette.primary.main,
+    color: "#070808",
     marginBottom: theme.spacing(2),
   },
   table: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
   },
   tableButton: {
-    color: theme.palette.secondary.main,
+    color:  theme.palette.secondary.main,
   },
   form: {
     display: "flex",
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   formTitle: {
     fontSize: "1.2rem",
     fontWeight: "bold",
-    color: theme.palette.primary.main,
+    color: "#070808",
     marginBottom: theme.spacing(2),
   },
   formInput: {

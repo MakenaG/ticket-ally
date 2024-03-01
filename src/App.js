@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home"; // Import the Home component
-import Events from "./components/Events"; // Import the Events component
-import Event from "./components/Event"; // Import the Event component
-import Reservation from "./components/Reservation"; // Import the Reservation component
-import Admin from "./components/Admin"; // Import the Admin component
-
+import Home from "./components/Home"; 
+import Events from "./components/Events";
+import Event from "./components/Event"; 
+import Reservation from "./components/Reservation";
+import Admin from "./components/Admin"; 
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/reservation" element={<Reservation />} /> // Render the Reservation component for the /reservation path
         <Route path="/admin" element={<Admin />} /> // Render the Admin component for the /admin path
       </Routes>
+      <Footer /> {/* Include the Footer component */}
     </Router>
   );
 }

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "2rem",
     fontWeight: "bold",
-    color: theme.palette.primary.main,
+    color: "#0d0c0d",
     marginBottom: theme.spacing(2),
   },
   filters: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   eventTitle: {
     fontSize: "1.2rem",
     fontWeight: "bold",
-    color: theme.palette.text.primary,
+    color: "#0d0c0d",
   },
   eventDetails: {
     display: "flex",
@@ -65,9 +65,9 @@ const useStyles = makeStyles((theme) => ({
   },
   eventButton: {
     color: "white",
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: "#FFA500",
     "&:hover": {
-      backgroundColor: theme.palette.primary.dark,
+      backgroundColor: "gold",
     },
   },
 }));
